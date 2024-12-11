@@ -154,7 +154,8 @@ then
     #
     [ ! -z "$WM_THIRD_PARTY_USE_PARMETIS_403" ] && {
 	echo "Building ParMetis 4.0.3"
-	( rpm_make -p parmetis-4.0.3 -s parmetis-4.0.3.spec -u http://glaros.dtc.umn.edu/gkhome/fetch/sw/parmetis/parmetis-4.0.3.tar.gz )
+	#( rpm_make -p parmetis-4.0.3 -s parmetis-4.0.3.spec -u http://glaros.dtc.umn.edu/gkhome/fetch/sw/parmetis/parmetis-4.0.3.tar.gz )
+	( rpm_make -p parmetis-4.0.3 -s parmetis-4.0.3.spec -u https://ftp.mcs.anl.gov/pub/pdetools/spack-pkgs/parmetis-4.0.3.tar.gz )
     }
 else
     echo "Using system installed ParMetis"
